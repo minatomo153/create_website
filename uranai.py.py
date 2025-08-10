@@ -13,7 +13,9 @@ if st.button("本日の運勢"):
     uranaiDice_sum = uranaiDice1 + uranaiDice2  # 2つの値を合計
     with st.spinner('占い中.'):
         time.sleep(3)	
-   
+	
+    st.balloons()
+    time.sleep(2)
     if uranaiDice_sum == 1:
         kekka = "大大吉"
     elif uranaiDice_sum >=2  and uranaiDice_sum <= 9:
